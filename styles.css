@@ -1,45 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    /*
     min-height: 100vh;
-    
+    min-width: 100vw;
+    */
 }
 
 .container {
     display: flex;
     min-height: 100vh;
-    background-image: url('bg-weather.png');
+    min-width: 100vw;
+    background-image: url('img/bg-weather.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    flex-wrap:wrap;
+    
     
 }
 
 .left-panel {
-    width: 65%;
-    padding: 20px;
+    /*width: 65%;*/
+    padding: 40px;
     display: flex;
+    flex-basis:65%;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    /*align-content: space-around;*/
     color: #fff;
+    flex-grow: 1;  /* Allow the element to grow */
+    flex-shrink: 0;  /* Prevent the element from shrinking */
     
     
     
 }
 
 .right-panel {
-    width: 35%;
+    /*width: 35%;*/
     padding: 20px;
     color: #fff;
     display:flex;
+    flex-basis:35%;
     flex-direction: column;
     gap: 20px;
-    background-image: url('bg-blur.png');
+    background-image: url('img/bg-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    flex-grow: 1;  /* Allow the element to grow */
+    flex-shrink: 0;  /* Prevent the element from shrinking */
     
 }
 
@@ -83,6 +100,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid white;
 }
 
 .search input {
@@ -118,6 +136,7 @@ h2, h3 {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    
 }
 
 .details div {
@@ -145,6 +164,8 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-top: 2px solid white;
+    
 }
 
 .forecast-item {
@@ -173,7 +194,7 @@ h2, h3 {
 
 @media only screen and (max-width: 600px) {
     .left-panel, .right-panel {
-        width: 100%;
-        padding: 10px;
+        flex-basis: 100%;
+        padding: 5px;
     }
 }
