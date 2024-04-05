@@ -1,0 +1,376 @@
+.bg-weather-icon {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 1440px;
+    height: 806px;
+    object-fit: cover;
+  }
+  .bg-blur {
+    position: absolute;
+    top: 3px;
+    left: 909px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(19px);
+    border-left: 5px solid rgba(255, 255, 255, 0.14);
+    box-sizing: border-box;
+    width: 531px;
+    height: 1205px;
+  }
+  .home-desktop-child,
+  .home-desktop-item {
+    position: absolute;
+    top: 41px;
+    left: 949px;
+    border-bottom: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 371px;
+    height: 50px;
+  }
+  .home-desktop-item {
+    top: 531px;
+  }
+  .div {
+    position: absolute;
+    top: 556px;
+    left: 120px;
+    font-size: 143px;
+    letter-spacing: -0.08em;
+    display: inline-block;
+    width: 192px;
+  }
+  .group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--primary);
+    box-sizing: border-box;
+    width: 371px;
+    height: 50px;
+  }
+  .fasearch-icon {
+    position: absolute;
+    top: 9px;
+    left: 326px;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+  }
+  .london,
+  .rectangle-parent {
+    position: absolute;
+    top: 41px;
+    left: 949px;
+    width: 371px;
+    height: 50px;
+    display: none;
+  }
+  .london {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 227px;
+    height: 72px;
+  }
+  .monday-9-sep {
+    position: absolute;
+    top: 72px;
+    left: 5px;
+    font-size: var(--font-size-lg);
+  }
+  .london-parent {
+    position: absolute;
+    top: 594px;
+    left: 322px;
+    width: 227px;
+    height: 93px;
+    font-size: 60px;
+  }
+  .cloudy-icon {
+    position: absolute;
+    top: 617px;
+    left: 559px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .search-location {
+    position: absolute;
+    top: 55px;
+    left: 949px;
+    font-size: 20px;
+    color: var(--color-gray-100);
+    text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+  }
+  .weather-details {
+    position: absolute;
+    top: 132px;
+    left: 949px;
+  }
+  .fasearch-icon1,
+  .todays-weather-forecast {
+    position: absolute;
+    top: 622px;
+    left: 949px;
+  }
+  .fasearch-icon1 {
+    top: 10px;
+    left: 1154px;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+  }
+  .logo-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89.9px;
+    height: 47px;
+    object-fit: cover;
+  }
+  .fasearch-parent,
+  .heavy-rain-icon {
+    position: absolute;
+    top: 40px;
+    left: 121px;
+    width: 1182px;
+    height: 47px;
+  }
+  .heavy-rain-icon {
+    top: 768px;
+    left: 949px;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    object-fit: cover;
+    display: none;
+  }
+  .div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .snow {
+    top: 54.35%;
+    left: 0;
+    color: var(--color-gray-100);
+  }
+  .div2,
+  .parent,
+  .snow {
+    position: absolute;
+  }
+  .parent {
+    height: 79.31%;
+    width: 12.71%;
+    top: 10.34%;
+    right: 63.84%;
+    bottom: 10.34%;
+    left: 23.45%;
+  }
+  .div2 {
+    height: 55.17%;
+    width: 14.12%;
+    top: 22.41%;
+    left: 85.88%;
+    font-size: var(--font-size-5xl);
+    color: var(--color-gray-100);
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+  .snow-icon {
+    position: absolute;
+    height: 82.76%;
+    width: 13.56%;
+    top: 5.17%;
+    right: 86.44%;
+    bottom: 12.07%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .forecast-card {
+    position: absolute;
+    top: 699px;
+    left: 949px;
+    width: 354px;
+    height: 58px;
+  }
+  .forecast-card1,
+  .forecast-card2,
+  .forecast-card3,
+  .forecast-card4 {
+    position: absolute;
+    top: 777px;
+    left: 949px;
+    width: 354px;
+    height: 58px;
+  }
+  .forecast-card2,
+  .forecast-card3,
+  .forecast-card4 {
+    top: 855px;
+  }
+  .forecast-card3,
+  .forecast-card4 {
+    top: 933px;
+  }
+  .forecast-card4 {
+    top: 1011px;
+  }
+  .thunderstorm-with-light {
+    width: 354px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-white);
+    display: inline-block;
+  }
+  .div11,
+  .temp-max {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 92px;
+  }
+  .div11 {
+    left: 286.4px;
+    color: var(--color-white);
+    width: 27.6px;
+  }
+  .temp-max-parent,
+  .vector-icon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 314px;
+    height: 21px;
+  }
+  .vector-icon {
+    height: 100%;
+    width: 3.95%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 96.05%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-parent {
+    width: 354px;
+    position: relative;
+    height: 26px;
+  }
+  .outline-icon {
+    position: absolute;
+    height: 100%;
+    width: 5.08%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 94.92%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .div13,
+  .humadity {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .div13 {
+    left: 280px;
+    color: var(--color-white);
+  }
+  .humadity-parent {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 314px;
+    height: 21px;
+  }
+  .outline-parent {
+    width: 354px;
+    position: relative;
+    height: 24px;
+  }
+  .outline-icon1 {
+    position: absolute;
+    height: 100%;
+    width: 6.21%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 93.79%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .cloudy-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 314px;
+    height: 21px;
+  }
+  .outline-group {
+    width: 354px;
+    position: relative;
+    height: 22px;
+  }
+  .kmh,
+  .outline-icon2 {
+    position: absolute;
+    top: 0;
+  }
+  .outline-icon2 {
+    height: 90.48%;
+    width: 6.78%;
+    right: 0;
+    bottom: 9.52%;
+    left: 93.22%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .kmh {
+    left: 244px;
+    color: var(--color-white);
+    text-align: right;
+    display: inline-block;
+    width: 70px;
+  }
+  .outline-container {
+    width: 354px;
+    position: relative;
+    height: 21px;
+  }
+  .thunderstorm-with-light-drizzl-parent {
+    position: absolute;
+    top: 205px;
+    left: 949px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    color: var(--color-gray-100);
+  }
+  .home-desktop {
+    width: 100%;
+    position: relative;
+    height: 806px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    font-family: var(--font-roboto);
+  }
+  
