@@ -17,79 +17,96 @@
       <div class="bg-blur"></div>
       <div class="home-desktop-child"></div>
       <div class="home-desktop-item"></div>
-      <div class="div">16°</div>
+      <div class="div"></div>
       <div class="rectangle-parent">
         <div class="group-child"></div>
       </div>
-      <div class="london-parent">
-        <div class="london">London</div>
-        <div class="monday-9-sep">06:09 - Monday, 9 Sep ‘23</div>
+      <div class="city-parent">
+        <div class="city"></div>
+        <div class="time-date"></div>
       </div>
-      <img class="cloudy-icon" alt="" src="./public/32cloudy@2x.png" />
+      <img class="cloudy-icon" id="title-img" alt="" style="display: none;" />
 
-      <div class="search-location">Search Location...</div>
+      <!--<div class="search-location">Search Location...</div>-->
+      <!--<input type="text" id="city" class="search-location" placeholder="Search Location...">-->
       <div class="weather-details">Weather Details...</div>
       <div class="todays-weather-forecast">Today’s Weather Forecast...</div>
       <div class="fasearch-parent">
-        <img class="fasearch-icon1" alt="" src="./public/fasearch.svg" />
+        <!--<img class="fasearch-icon1" alt="" src="./public/fasearch.svg" />-->
+        
 
         <img class="logo-icon" alt="" src="./public/logo@2x.png" />
       </div>
-      <div class="forecast-card">
-        <div class="parent">
-          <div class="div1">09:00</div>
-          <div class="snow">Snow</div>
+
+      <form id="weather-form">
+        <input type="text" id="city" class="search-location" placeholder="Search Location..." />
+        <button type="submit" id="myButton">
+          <img class="fasearch-icon1" alt="" src="./public/fasearch.svg" />
+        </button>
+      </form>
+
+      <div class="todays-weather-forecast-hourly">
+
+        <div class="forecast-card0">
+          <div class="parent">
+            <div class="div1"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="div2"></div>
+          <img class="desc-icon" alt="" src="" />
         </div>
-        <div class="div2">19°</div>
-        <img class="snow-icon" alt="" src="./public/32snow@2x.png" />
-      </div>
-      <div class="forecast-card1">
-        <div class="parent">
-          <div class="div1">09:00</div>
-          <div class="snow">Snow</div>
+        <div class="forecast-card1">
+          <div class="parent">
+            <div class="div1"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="div2"></div>
+          <img class="desc-icon" alt="" src="" />
         </div>
-        <div class="div2">19°</div>
-        <img class="snow-icon" alt="" src="./public/32snow@2x.png" />
-      </div>
-      <div class="forecast-card2">
-        <div class="parent">
-          <div class="div1">09:00</div>
-          <div class="snow">Snow</div>
+        <div class="forecast-card2">
+          <div class="parent">
+            <div class="div1"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="div2"></div>
+          <img class="desc-icon" alt="" src="" />
         </div>
-        <div class="div2">19°</div>
-        <img class="snow-icon" alt="" src="./public/32snow@2x.png" />
-      </div>
-      <div class="forecast-card3">
-        <div class="parent">
-          <div class="div1">09:00</div>
-          <div class="snow">Snow</div>
+        <div class="forecast-card3">
+          <div class="parent">
+            <div class="div1"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="div2"></div>
+          <img class="desc-icon" alt="" src="" />
         </div>
-        <div class="div2">19°</div>
-        <img class="snow-icon" alt="" src="./public/32snow@2x.png" />
-      </div>
-      <div class="forecast-card4">
-        <div class="parent">
-          <div class="div1">09:00</div>
-          <div class="snow">Snow</div>
+        <div class="forecast-card4">
+          <div class="parent">
+            <div class="div1"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="div2"></div>
+          <img class="desc-icon" alt="" src="" />
         </div>
-        <div class="div2">19°</div>
-        <img class="snow-icon" alt="" src="./public/32snow@2x.png" />
+
       </div>
-      <div class="thunderstorm-with-light-drizzl-parent">
-        <div class="thunderstorm-with-light">
-          thunderstorm with light drizzle
+      
+
+
+      <div class="weather-details-information">
+
+        <div class="weather-details-information-title">
         </div>
         <div class="group-parent">
           <div class="temp-max-parent">
             <div class="temp-max">Temp max</div>
-            <div class="div11">19°</div>
+            <div class="div11"></div>
           </div>
           <img class="vector-icon" alt="" src="./public/vector1.svg" />
         </div>
         <div class="group-parent">
-          <div class="temp-max-parent">
-            <div class="temp-max">Temp min</div>
-            <div class="div11">15°</div>
+          <div class="temp-min-parent">
+            <div class="temp-min">Temp min</div>
+            <div class="div11"></div>
           </div>
           <img class="vector-icon" alt="" src="./public/vector.svg" />
         </div>
@@ -98,7 +115,7 @@
 
           <div class="humadity-parent">
             <div class="humadity">Humadity</div>
-            <div class="div13">58%</div>
+            <div class="div13"></div>
           </div>
         </div>
         <div class="outline-group">
@@ -106,7 +123,7 @@
 
           <div class="cloudy-parent">
             <div class="humadity">Cloudy</div>
-            <div class="div13">86%</div>
+            <div class="div13"></div>
           </div>
         </div>
         <div class="outline-container">
@@ -114,10 +131,13 @@
 
           <div class="cloudy-parent">
             <div class="humadity">Wind</div>
-            <div class="kmh">5km/h</div>
+            <div class="kmh"></div>
           </div>
         </div>
+
       </div>
     </div>
+
+    <script src="weatherAPI.js"></script>
   </body>
 </html>

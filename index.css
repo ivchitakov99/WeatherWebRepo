@@ -38,6 +38,7 @@
     letter-spacing: -0.08em;
     display: inline-block;
     width: 192px;
+    text-align: center;
   }
   .group-child {
     position: absolute;
@@ -56,29 +57,41 @@
     height: 28px;
     overflow: hidden;
   }
-  .london,
+  .city,
   .rectangle-parent {
-    position: absolute;
+    /*position: absolute;
     top: 41px;
     left: 949px;
+    */
+    position:relative;
     width: 371px;
     height: 50px;
     display: none;
   }
-  .london {
+  .city {
+    /*
     top: 0;
     left: 0;
+    */
     display: inline-block;
     width: 227px;
     height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
   }
-  .monday-9-sep {
-    position: absolute;
+  .time-date {
+    /*position: absolute;*/
+    position:relative;
+    /*
     top: 72px;
     left: 5px;
+    */
+    vertical-align: top;
     font-size: var(--font-size-lg);
   }
-  .london-parent {
+  .city-parent {
     position: absolute;
     top: 594px;
     left: 322px;
@@ -102,7 +115,30 @@
     font-size: 20px;
     color: var(--color-gray-100);
     text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+    background: transparent;
+    border: none;
+    
   }
+
+  .search-location::placeholder {
+    color: var(--color-gray-100); 
+  }
+
+  /* Add these lines to your CSS */
+  .search-location:focus {
+    background: transparent;
+    outline: none;
+  }
+
+  .search-location:-webkit-autofill,
+  .search-location:-webkit-autofill:hover, 
+  .search-location:-webkit-autofill:focus, 
+  .search-location:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--color-gray-100); /* Adjust this to match your desired text color */
+    
+  }
+
   .weather-details {
     position: absolute;
     top: 132px;
@@ -115,8 +151,8 @@
     left: 949px;
   }
   .fasearch-icon1 {
-    top: 10px;
-    left: 1154px;
+    top: 50px;
+    left: 1275px;
     width: 28px;
     height: 28px;
     overflow: hidden;
@@ -151,14 +187,14 @@
     top: 0;
     left: 0;
   }
-  .snow {
+  .desc {
     top: 54.35%;
     left: 0;
     color: var(--color-gray-100);
   }
   .div2,
   .parent,
-  .snow {
+  .desc {
     position: absolute;
   }
   .parent {
@@ -180,7 +216,7 @@
     display: flex;
     align-items: center;
   }
-  .snow-icon {
+  .desc-icon {
     position: absolute;
     height: 82.76%;
     width: 13.56%;
@@ -192,11 +228,15 @@
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
+    display:none;
   }
-  .forecast-card {
-    position: absolute;
+  .forecast-card0 {
+    /*position: absolute;*/
+    position:relative;
+    /*
     top: 699px;
     left: 949px;
+    */
     width: 354px;
     height: 58px;
   }
@@ -204,25 +244,30 @@
   .forecast-card2,
   .forecast-card3,
   .forecast-card4 {
+    /*
     position: absolute;
     top: 777px;
     left: 949px;
+    */
+    position:relative;
     width: 354px;
     height: 58px;
   }
+  
   .forecast-card2,
   .forecast-card3,
   .forecast-card4 {
-    top: 855px;
+    /*top: 855px;*/
   }
   .forecast-card3,
   .forecast-card4 {
-    top: 933px;
+    /*top: 933px;*/
   }
   .forecast-card4 {
-    top: 1011px;
+    /*top: 1011px;*/
   }
-  .thunderstorm-with-light {
+  
+  .weather-details-information-title {
     width: 354px;
     position: relative;
     text-transform: uppercase;
@@ -231,19 +276,26 @@
     display: inline-block;
   }
   .div11,
-  .temp-max {
+  .temp-max,
+  .temp-min {
     position: absolute;
     top: 0;
     left: 0;
     display: inline-block;
     width: 92px;
+   
   }
   .div11 {
     left: 286.4px;
     color: var(--color-white);
     width: 27.6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
   }
   .temp-max-parent,
+  .temp-min-parent,
   .vector-icon {
     position: absolute;
     top: 3px;
@@ -266,6 +318,7 @@
     width: 354px;
     position: relative;
     height: 26px;
+    
   }
   .outline-icon {
     position: absolute;
@@ -284,10 +337,18 @@
     position: absolute;
     top: 0;
     left: 0;
+    
+    
+   
   }
   .div13 {
-    left: 280px;
+    left: 286.4px;
     color: var(--color-white);
+    width:27.6px;
+    /*text-align: right;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   .humadity-parent {
     position: absolute;
@@ -341,18 +402,21 @@
     max-height: 100%;
   }
   .kmh {
-    left: 244px;
+    left: 244.4px;
     color: var(--color-white);
-    text-align: right;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*display: inline-block;*/
     width: 70px;
+    
   }
   .outline-container {
     width: 354px;
     position: relative;
     height: 21px;
   }
-  .thunderstorm-with-light-drizzl-parent {
+  .weather-details-information {
     position: absolute;
     top: 205px;
     left: 949px;
@@ -374,3 +438,34 @@
     font-family: var(--font-roboto);
   }
   
+
+  .todays-weather-forecast-hourly {
+    position: absolute;
+    top: 699px;
+    left: 949px;
+    height: 105px;
+    overflow-y: auto;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* This applies to the whole page */
+::-webkit-scrollbar {
+  width: 0; /* Adjust scrollbar width */
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scroll thumb on hover */
+}
