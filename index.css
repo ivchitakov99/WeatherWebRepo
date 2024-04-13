@@ -27,13 +27,15 @@
   box-sizing: border-box;
   width: 36.875vw;
   height: 149.504vh;
+  text-align: left;
+
 }
 
 .home-desktop-child,
 .home-desktop-item {
   position: absolute;
   top: 5.087vh;
-  left: 2.778vw;
+  left: 65.903vw;
   /*left: 949px;*/
   border-bottom: 1px solid var(--color-white);
   box-sizing: border-box;
@@ -42,6 +44,7 @@
 }
 .home-desktop-item {
   top: 65.881vh;
+  left:2.431vw;
 }
 .div {
   position: absolute;
@@ -96,7 +99,8 @@
   position:relative;
   display: inline-block;
   width: 15.764vw;
-  height: 8.933vh;
+  
+  height: auto;
   max-width: 15.764vw;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -121,6 +125,9 @@
   width: 15.764vw;
   height: 11.538vh;
   font-size: 4.167vw;
+
+
+
 }
 .cloudy-icon {
   position: absolute;
@@ -133,9 +140,11 @@
 }
 .search-location {
   position: absolute;
-  top: 6.824vh;
+  /*top: 6.824vh;*/
   /*left: 949px;*/
-  left: 2.778vw;
+  /*left: 2.778vw;*/
+  left:0;
+  top:1.117vh;
   font-size: 1.389vw;
   color: var(--color-gray-100);
   text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
@@ -177,9 +186,11 @@
   left:2.778vw;
 }
 .fasearch-icon1 {
-  top: 6.203vh;
+  /*top: 6.203vh;*/
   /*left: 1275px;*/
-  left: 25.417vw;
+  top:1.117vh;
+  left:22.639vw;
+  /*left: 25.417vw;*/
   width: 1.944vw ;
   height: 3.474vh; 
   overflow: hidden;
@@ -339,9 +350,11 @@
   left: 19.889vw;
   color: var(--color-white);
   width: 1.917vw;
+  /*
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  */
   
 }
 .temp-max-parent,
@@ -523,4 +536,195 @@ background: #888; /* Color of the scroll thumb */
 
 ::-webkit-scrollbar-thumb:hover {
 background: #555; /* Color of the scroll thumb on hover */
+}
+
+
+
+@media (max-width: 768px) {
+  .div {
+    width: 161px;
+    height: 141px;
+    top: 267px;
+    left: 39px;
+    font-family: Roboto;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 140.63px;
+    letter-spacing: -0.08em;
+    text-align: left;
+    
+  }
+
+  .city-parent{
+    width: 189px;
+    height: 67px;
+    top: 304px;
+    left: 210px;
+  
+  }
+
+  .city {
+    position:relative;
+    display: inline-block;
+    width: 189px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+    
+  }
+
+  .time-date {
+    width: 184.89px;
+    height: auto;
+    position:relative;
+    /*
+    top: 72px;
+    left: 5px;
+    */
+    vertical-align: top;
+    /*font-size: var(--font-size-lg);*/
+    font-size:16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+
+
+  }
+
+  .cloudy-icon {
+    width: 55px;
+    height: 55px;
+    top: 317px;
+    left: 414px;
+
+
+  }
+
+  .logo-icon {
+    width: 60px;
+    height: 31.37px;
+  }
+
+  .home-desktop-child {
+    
+    width: 305px;
+    height: 45px;
+    top: 13px;
+    left: 424px;
+
+
+  }
+
+  .search-location {
+    width: 198px;
+    height: 21px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    top:18px;
+    left:0;
+
+  }
+
+  .fasearch-icon1{
+    width: 22px;
+    height: 21px;
+    top:18px;
+    left:283px;
+
+  }
+
+  .bg-blur {
+    position: fixed;
+    width: 767px;
+    height: 1084px;
+    top: 452px;
+    right:0;
+    bottom: 0;
+    border-top: 5px solid rgba(255, 255, 255, 0.14);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    gap:15px;
+    
+
+  }
+
+  .bg-blur > * {
+    margin-top: 50px; /* Adjust this value to change the vertical spacing */
+  }
+
+  .weather-details{
+    /*left:auto;*/
+    /*top:auto;*/
+    position:static;
+
+
+  }
+
+  .weather-details-information{
+    left:auto;
+    top:auto;
+    position:static;
+    width: 354px;
+    height: 290px;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+
+  }
+
+  .weather-details-information > div {
+    width: 100%;
+    /* Other properties... */
+  }
+
+  .weather-details-information-title{
+    text-align: center;
+  }
+
+  group-parent, .outline-parent, .outline-group, .outline-container{
+    width:100%;
+  }
+
+  .div11, .div13, .temp-max, .temp-min, .humadity, .kmh {
+    position:static;
+    left:auto;
+    top:auto;
+    width:auto;
+    height:auto;
+  }
+
+  .temp-max-parent, .temp-min-parent, .humadity-parent, .cloudy-parent{
+    display:flex;
+    position:static;
+    justify-content: space-between;
+    align-items: center;
+    width:90%
+  }
+
+  .home-desktop-item{
+
+    width: 371px;
+    height: 50px;
+    position:static;
+
+
+  }
+
+  .todays-weather-forecast,
+  .todays-weather-forecast-hourly {
+    display: none;
+  }
+
+
+  
 }
