@@ -97,3 +97,85 @@ function displayWeather(data, cityName) {
     image.style.display = 'block';
   }
 }
+
+
+let searchHistory = [];
+
+document.getElementById('weather-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var city = document.getElementById('city').value;
+  fetchWeatherData(city);
+  addToSearchHistory(city);
+});
+
+document.getElementById('search-history-btn').addEventListener('click', function() {
+  toggleSearchHistory();
+});
+
+function addToSearchHistory(city) {
+  searchHistory.push(city);
+  updateSearchHistory();
+  saveSearchHistory();
+}
+
+function updateSearchHistory() {
+  const searchHistoryList = document.getElementById('search-history-list');
+  searchHistoryList.innerHTML = '';
+
+  searchHistory.forEach((city) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = city;
+    listItem.addEventListener('click', () => {
+      fetchWeatherData(city);
+      toggleSearchHistory();
+    });
+    searchHistoryList.appendChild(listItem);
+  });
+}
+
+function saveSearchHistory() {
+  sessionStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+}
+
+function loadSearchHistory() {
+  const storedHistory = sessionStorage.getItem('searchHistory');
+  if (storedHistory) {
+    searchHistory = JSON.parse(storedHistory);
+    updateSearchHistory();
+  }
+}
+
+function toggleSearchHistory() {
+  const searchHistoryContainer = document.querySelector('.search-history-container');
+  const screenOverlay = document.querySelector('.screen-overlay');
+  /*const bgBlurContainer = document.querySelector('.bg-blur');*/
+
+  if (searchHistoryContainer.style.display === 'none') {
+    searchHistoryContainer.style.display = 'block';
+    screenOverlay.style.display = 'block';
+    /*bgBlurContainer.style.display = 'none';*/
+  } else {
+    searchHistoryContainer.style.display = 'none';
+    screenOverlay.style.display = 'none';
+    /*bgBlurContainer.style.display = 'flex';*/
+  }
+}
+
+
+loadSearchHistory();
+
+const searchHistoryContainer = document.querySelector('.search-history-container');
+const screenOverlay = document.querySelector('.screen-overlay');
+const closeBtn = document.querySelector('.close-btn');
+const homeDesktopChild = document.querySelector('.home-desktop-child');
+
+closeBtn.addEventListener('click', toggleSearchHistory);
+
+
+document.addEventListener('click', (event) => {
+  if (searchHistoryContainer.style.display === 'block') {
+    if (!searchHistoryContainer.contains(event.target) && !homeDesktopChild.contains(event.target) && event.target !== document.getElementById('search-history-btn')) {
+      toggleSearchHistory();
+    }
+  }
+});
