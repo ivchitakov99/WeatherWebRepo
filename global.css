@@ -1,0 +1,22 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+    
+    
+  }
+  
+  :root {
+    /* fonts */
+    --font-roboto: Roboto;
+  
+    /* font sizes */
+    --font-size-lg: 18px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --primary: #252422;
+    --color-gray-100: rgba(255, 255, 255, 0.7);
+  }
+  
