@@ -105,7 +105,11 @@ document.getElementById('weather-form').addEventListener('submit', function(even
   event.preventDefault();
   var city = document.getElementById('city').value;
   fetchWeatherData(city);
-  addToSearchHistory(city);
+  
+  if (!searchHistory.includes(city)) {
+    addToSearchHistory(city);
+  }
+  
 });
 
 document.getElementById('search-history-btn').addEventListener('click', function() {
